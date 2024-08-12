@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
+
+
+.display{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+p , h1 , h2 , h3 {
+    font-family: "Lato", sans-serif;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(39, 39, 39, 0.6);
+}
+
+input::placeholder{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Header content  */
+
+
+
+
+.header{
+    background: rgba(229, 84, 115, 0.1);
+}
+
+
+.header-content{
+    display: flex;
+    justify-content: space-evenly;
+
+    img{
+        padding-top: 20px;
+    }
+}
+
+.header-title{
+    h1{
+        font-size: 70px;
+        font-weight: 800;
+    }
+}
+
+
+.all-btn{
+    height: 3em;
+    border-radius: 8px;
+    background: rgb(229, 84, 115);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.all-btn:hover {
+	transform: scale(1.10);
+    letter-spacing: 2px;
+  }
+
+.all-btn:active {
+	transform: scale(0.9);
+    letter-spacing: 0px;
+}
+
+
+
+/* """"""""""""""""""""""""""""""""""""          Flowers content               """"""""""""""""""""""""""""""""""" */
+
+
+.flowers{
+    margin-top: 10%;
+}
+
+
+.flowers-container-title{
+    text-align: center;
+    margin-bottom: 5%;
+
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
+
+.flowers-container-image{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.flowers-1-div, .flowers-2-div , .flowers-3-div{
+    text-align: center;
+
+    p{
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(39, 39, 39);
+    }
+}
+
+
+.flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    border-radius: 300px 300px 0px 0px;
+}
+
+.flowers-1-div-dis{
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.flowers-2-div-dis{
+    background: rgba(5, 151, 160, 0.15);
+
+    img{
+        padding-bottom: 60px;
+    }
+}
+
+.flowers-3-div-dis{
+    background: rgba(71, 125, 17, 0.15);
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    background-color: #0000003a;
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    width: 10%;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.flowers-1-div-dis:hover .overlay , .flowers-2-div-dis:hover .overlay , .flowers-3-div-dis:hover .overlay {
+    border-radius: 300px 300px 0px 0px;
+}
+  
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    p{
+        color: rgb(255, 255, 255);
+    }
+}  
+
+
+
+
+
+
+
+
+/* ________________________________________    Support Content _______________________________________ */
+
+
+
+.support{
+    margin-top: 10%;
+}
+.support-container{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+}
+
+.support-container-dis{
+    text-align: center;
+
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    img{
+        margin-top: 0;
+    }
+}
+
+
+
+
+/* ==================================================================== Sign up content ? */
+
+
+.sign-up{
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* height: 35em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sign-up-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.sign-up-container-title{
+    width: auto;
+    text-align: center;
+
+    h1{
+        font-size: 40px;
+        font-weight: 800; 
+        color: rgb(39, 39, 39);
+        white-space: nowrap;
+        overflow: hidden;
+
+        border-right:2px solid black ;
+        margin: 0 auto;
+        animation:  typing 3.5s infinite alternate , cursor .8s  infinite ;
+    
+    }
+    
+}
+
+.off{
+    color: rgb(229, 84, 115);
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Instagram >>>>>>>>>>>>>>>/ */
+
+
+
+.instagram-container-title{
+    text-align: center;
+
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
+.instagram-container-image{
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* ___________________________________________________________ Deals content  */
+
+
+
+.deals{
+    background-image: url(../Flower-Asset/Rectangle-9.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deals-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 0;
+        margin-top: 0;
+       
+        white-space: nowrap;
+        overflow: hidden;
+
+        border-right:2px solid black ;
+        margin: 0 auto;
+        animation:  typing-1 3.5s infinite alternate , cursor .8s  infinite ;
+    }
+    
+    p{
+        margin-bottom: 3%;
+    }
+}
+
+.deals-container-input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    input{
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        border: none;
+        padding-left: 5%;
+        font-size: 18px;
+        outline: 0;
+    }
+
+}
+
+
+.all-btn-1{
+    width: 100%;
+    height: 3em;
+    border-radius: 8px;
+    background: rgb(229, 84, 115);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.all-btn-1:hover {
+transform: scale(1.10);
+letter-spacing: 2px;
+}
+
+.all-btn-1:active {
+transform: scale(0.9);
+letter-spacing: 0px;
+}
+
+
+
+
+
+
+
+/* *************************************************** Footer Content ? */
+
+
+.footer{
+    
+    height: 30em;
+    background: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        color: rgb(255, 255, 255);
+    }
+
+    .p{
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    p{
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 86% }
+}
+@keyframes typing-1 {
+    from { width: 0 }
+    to { width: 26% }
+}
+  
+ 
+@keyframes cursor {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0) }
+}
+
+
+@media screen and (min-width: 50px) {
+
+
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .all-btn{
+        width: 70%;
+    }
+    
+
+   
+    /* ========================================  Flowers ======================= */
+
+
+
+    .flowers-container-image{
+        flex-direction: column;
+
+    }
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+       
+        img{
+            width: 80%;
+        }
+    }
+
+    .flowers-1-div-dis , .flowers-2-div-dis{
+        height: 25em;
+    }
+
+    .flowers-1-div-dis:hover .overlay {
+        width: 19.5em;
+        height: 25em;
+    }
+    
+    .flowers-2-div-dis:hover .overlay{
+        width: 20.5em;
+        height: 25em;
+    }
+
+    .flowers-3-div-dis:hover .overlay{
+        width: 19.7em;
+        height: 23.5em;
+    }
+
+
+
+  /* ???????????????????????????????????????? Support ???????????????????????? */
+
+
+
+    .support-container{
+        width: 100%;
+        flex-direction: column;
+        height: 50em;
+    }
+
+
+
+
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Sign up */
+
+    .sign-up-container{
+        flex-direction: column;
+        
+    }
+
+
+  /* _______________________________________ Instagram __________________ */
+
+   
+
+    .instagram-container-image{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++ Deals  */
+
+
+    .deals{
+        background-size: 100% 100%;
+    }
+
+    .deals-container-input{
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    
+        input{
+            width: 100%;
+            height: 3.5em;
+        }
+    }
+ 
+    .btn{
+        width: 50%;  
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+   
+    .header-content{
+        img{
+            width: 80%;
+        }
+    }
+
+    .all-btn{
+        width: 29%;
+    }
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 35em;
+        height: 35em;
+
+        img{
+            width: 60%;
+        }
+    }
+
+    .flowers-1-div-dis:hover .overlay , .flowers-2-div-dis:hover .overlay , .flowers-3-div-dis:hover .overlay {
+        width: inherit;
+        height: inherit;
+    }
+ 
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Sign-up  */
+
+
+    .sign-up-container{
+        flex-direction: row;
+
+    }
+
+
+    .sign-up-btn{
+        width: 60%;
+    }
+
+
+    /* ---------------------------- instagram ------------------------------ */
+
+    .instagram-container-image{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media screen and (min-width: 850px) {
+
+    .header-content{
+        img{
+            width: 60%;
+        }
+    }
+
+
+    .support-container{
+        flex-direction: row;
+        width: 100%;
+        height: 20em;
+    }
+
+
+    .all-btn{
+        width: 26%;
+    }
+
+
+    .sign-up-btn{
+        width: 48%;
+    }
+
+
+   
+
+    /* #######################################  Deals content: ; */
+
+
+    
+    .deals-container{
+        background-size: cover;
+        height: 20em;
+        width: 100%;
+    }
+    
+    .deals-container-input{
+        flex-direction: row;
+        width:  70%;
+    }
+
+    .btn{
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+
+
+    .instagram-container-image{
+        grid-template-columns: repeat(4, 1fr);
+    }
+   
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    .header-content{
+        flex-direction: row;
+
+        img{
+            width: 35%;
+        }
+    }
+
+    .all-btn{
+        
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        width: 38%;
+    } 
+
+
+    .flowers-container-image{
+        flex-direction: row;
+    }
+
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 17em;
+        height: 19em;
+
+        img{
+            width: 70%;
+        }
+    } 
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .all-btn{
+        width: 26%;
+    }
+
+ 
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 18em;
+        height: 20em;
+    } 
+}
+
+@media screen and (min-width: 1400px) {
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 22em;
+        height: 24em;
+    }
+
+    .btn{
+        width: 30%;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 23em;
+        height: 25em;
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+
+    .all-btn{
+        width: 28%;
+    }
+
+    .btn{
+        width: 28%;
+    }
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 25em;
+        height: 27em;
+    }
+
+    .deals-container{
+        height: 25em;
+        background-size: cover;
+    }
+    
+}
+
+@media screen and (min-width: 1800px) {
+    
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 28em;
+        height: 30em;
+    }
+
+    .deals-container{
+        height: 30em;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 30em;
+        height: 32em;
+    }
+
+    .all-btn{
+        width: 33%;
+    }
+    .btn{
+        width: 26%;
+    }
+
+    
+}
+
+@media screen and (min-width: 2200px) {
+
+    .flowers-1-div-dis , .flowers-2-div-dis , .flowers-3-div-dis{
+        width: 40em;
+        height: 42em;
+    }
+
+    .all-btn{
+        width: 43%;
+    }
+    .btn{
+        width: 27%;
+    }
+
+    .deals-container{
+        height: 40em;
+    }
+}
+
+
+
+
+
+
